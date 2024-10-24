@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="ProfilePage.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Greeting -->
+        <h1 id="greeting">Welcome to Your Profile</h1>
+
+        <!-- Available Balance Section -->
+        <div class="balance-section">
+            <h2>Your Available Balance:</h2>
+            <p id="available-balance">$5,000.00</p>
+        </div>
+
+        <!-- Credit Card Dropdown -->
+        <div class="credit-card-section">
+            <h2>Select Credit Card:</h2>
+            <select id="credit-card-dropdown" onchange="showCardBalance()">
+                <option value="" disabled selected>Select a card</option>
+                <option value="card1">Visa - ****1234</option>
+                <option value="card2">MasterCard - ****5678</option>
+            </select>
+            <p id="card-balance"></p>
+        </div>
+
+        <!-- 6 Tabs for Navigation -->
+        <div class="tabs-section">
+            <ul>
+                <li><a href="UserProfile.html">Tab 1: Profile Management</a></li>
+                <li><a href="TransactionManagement.html">Tab 2: Transaction Management</a></li>
+                <li><a href="AccountManagement.html">Tab 3: Account Management</a></li>
+                <li><a href="CreditCardApplication.html">Tab 4: Credit Card Application</a></li>
+                <li><a href="LoanApplication.html">Tab 5: Loan Application</a></li>
+                <li><a href="ProductExploration.html">Tab 6: Product Exploration</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="ProfilePage.js"></script>
+</body>
+</html>

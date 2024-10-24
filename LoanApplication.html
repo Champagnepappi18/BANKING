@@ -1,0 +1,29 @@
+<!-- LoanApplication.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+    <link rel="stylesheet" href="LoanApplication.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Loan Application</h2>
+        <form>
+            <label for="loan-amount">Loan Amount:</label>
+            <input type="number" id="loan-amount" placeholder="Enter loan amount">
+
+            <label for="loan-type">Loan Type:</label>
+            <select id="loan-type">
+                <option value="personal">Personal Loan</option>
+                <option value="home">Home Loan</option>
+                <option value="auto">Auto Loan</option>
+            </select>
+
+            <button type="submit">Apply for Loan</button>
+        </form>
+        <p id="loan-status"></p>
+    </div>
+</body>
+</html>
